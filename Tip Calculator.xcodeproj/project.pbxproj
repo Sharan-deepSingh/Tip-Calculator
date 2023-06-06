@@ -16,6 +16,7 @@
 		CEBC5D5D2A2DA5F9006D9A6C /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC5D5C2A2DA5F9006D9A6C /* Tip_CalculatorTests.swift */; };
 		CEBC5D672A2DA5F9006D9A6C /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC5D662A2DA5F9006D9A6C /* Tip_CalculatorUITests.swift */; };
 		CEBC5D692A2DA5F9006D9A6C /* Tip_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC5D682A2DA5F9006D9A6C /* Tip_CalculatorUITestsLaunchTests.swift */; };
+		CEBC5D792A2E16FD006D9A6C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC5D782A2E16FC006D9A6C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CEBC5D622A2DA5F9006D9A6C /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC5D662A2DA5F9006D9A6C /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		CEBC5D682A2DA5F9006D9A6C /* Tip_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEBC5D782A2E16FC006D9A6C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				CEBC5D452A2DA5E2006D9A6C /* AppDelegate.swift */,
 				CEBC5D472A2DA5E2006D9A6C /* SceneDelegate.swift */,
-				CEBC5D492A2DA5E2006D9A6C /* ViewController.swift */,
-				CEBC5D4B2A2DA5E2006D9A6C /* Main.storyboard */,
+				CEBC5D772A2DF5D4006D9A6C /* Model */,
+				CEBC5D762A2DF5C0006D9A6C /* View */,
+				CEBC5D752A2DF597006D9A6C /* Controllers */,
 				CEBC5D4E2A2DA5F7006D9A6C /* Assets.xcassets */,
 				CEBC5D502A2DA5F8006D9A6C /* LaunchScreen.storyboard */,
 				CEBC5D532A2DA5F8006D9A6C /* Info.plist */,
@@ -125,6 +128,30 @@
 				CEBC5D682A2DA5F9006D9A6C /* Tip_CalculatorUITestsLaunchTests.swift */,
 			);
 			path = "Tip CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		CEBC5D752A2DF597006D9A6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC5D492A2DA5E2006D9A6C /* ViewController.swift */,
+				CEBC5D782A2E16FC006D9A6C /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEBC5D762A2DF5C0006D9A6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC5D4B2A2DA5E2006D9A6C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEBC5D772A2DF5D4006D9A6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 				CEBC5D4A2A2DA5E2006D9A6C /* ViewController.swift in Sources */,
 				CEBC5D462A2DA5E2006D9A6C /* AppDelegate.swift in Sources */,
 				CEBC5D482A2DA5E2006D9A6C /* SceneDelegate.swift in Sources */,
+				CEBC5D792A2E16FD006D9A6C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +472,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +500,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
